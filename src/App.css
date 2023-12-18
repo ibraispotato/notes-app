@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(300deg, #02328b, #7c0101, #002a3a);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  
+}
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(121, 170, 255);
+}
+.p{
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(121, 170, 255);
+  display: none;
+}
+/* .text{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 40px;
+
+padding: 50px;
+} */
+
+.note{
+  min-width: 300px;
+  min-height: 200px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size:18px ;
+  border-radius: 15px;
+  background-color: rgba(24, 26, 27, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  color: rgb(121, 170, 255);
+}
+.notes{
+   min-width: 300px;
+  height: 200px;
+  padding: 15px; 
+  font-size:18px ;
+  border-radius: 15px;
+  background-color: rgba(24, 26, 27, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  color: rgb(121, 170, 255);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+
+
+.note:hover, .note:focus{
+  transition: all 300ms ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.note::placeholder {
+color: gray;
+opacity: 50%;
+}
+.notee{
+  background-color: transparent;
+  /* border: none; */
+  /* outline: none; */
+  font-size:18px ;
+  width: 250px;
+  /* line-break: 5; */
+  /* height: 200px; */
+ 
+  cursor: default;
+  color: rgb(121, 170, 255);
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  
+}
+.notee:focus{
+  text-decoration: none;
+  cursor: default;
+}
+.btn{
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 70px;
+  border-radius: 15px;
+  background-color: rgba(24, 26, 27, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  color: rgb(121, 170, 255);
+  cursor: pointer;
+
+}
+.btn:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.texto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px;
+}
+/* .all{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+} */
+.fatrash{
+  color: red;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  top: -300%;
+  left: 85%;
+}
+.complete{
+  background-color: black;
+}
+
+.btnsdeleAndEdit{
+  /* width: 300px; */
+  height: 20px;
+}
+
+.text{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
